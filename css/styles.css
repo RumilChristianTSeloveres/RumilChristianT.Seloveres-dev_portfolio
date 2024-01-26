@@ -4362,7 +4362,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-  background-color: var(--color-gray-2);
+  background-color: var(--color-gray-12); /*var(--color-gray-2);*/
   padding-top: calc(5.5 * var(--space));
   padding-bottom: var(--vspace-3);
   margin-top: auto;
@@ -4782,7 +4782,7 @@ img.u-pull-left {
   font-size: calc(var(--text-size) * 1.1111);
   font-weight: 300;
   line-height: 1.8;
-  color: var(--color-text-light);
+  color: var(--color-black);/*var(--color-text-light);*/
 }
 
 @media (min-width: 600px) {
@@ -4832,6 +4832,7 @@ img.u-pull-left {
 }
 
 .s-footer__social img {
+  background-color: transparent;
   height: 20px;
   margin: 0;
 }
