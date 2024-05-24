@@ -4021,6 +4021,12 @@ img.u-pull-left {
   position: relative;
 }
 
+.modal-popup a{
+  background-color: white;
+  font-size: 20px;
+  color: var(--color-black);
+}
+
 .modal-popup img {
   margin-bottom: var(--vspace-0_75);
   width: 700px;
