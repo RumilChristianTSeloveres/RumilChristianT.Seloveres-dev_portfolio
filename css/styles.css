@@ -3506,7 +3506,7 @@ img.u-pull-left {
 .s-intro__content-btn {
   color: white;
   background-color: white;
-  border-color: white;
+  border-color: orangered;
   margin-right: var(--vspace-1);
   margin-bottom: 0;
 }
