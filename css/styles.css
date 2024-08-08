@@ -3442,11 +3442,9 @@ img.u-pull-left {
 
 .s-intro__content-bg {
   display: block;
-  background-image: url(../images/profile.png);
+  background-image: url(../images/Profile1.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1700px;
-  width: 500px;
   position: absolute;
   top: var(--content-padding-top);
   right: var(--gutter);
