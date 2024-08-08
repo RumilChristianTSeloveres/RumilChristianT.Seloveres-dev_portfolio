@@ -3440,11 +3440,33 @@ img.u-pull-left {
   position: relative;
 }
 
+.image {
+	width: 55%;
+	height: 40%;
+	position: absolute;
+	right: 45px;
+	bottom: 15%;
+	z-index: 1;
+}
+
+.image img {
+	position: absolute;
+	height: 140%;
+	left: 45%;
+	transform: translate(-40%);
+	bottom: 0;
+	transition: left 2s ease;
+}
+
+.image:hover .me {
+	left: 55%;
+}
+
 .s-intro__content-bg {
   display: block;
-  background-image: url(../images/Profile1.png);
+  /*background-image: url(../images/Profile.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   position: absolute;
   top: var(--content-padding-top);
   right: var(--gutter);
