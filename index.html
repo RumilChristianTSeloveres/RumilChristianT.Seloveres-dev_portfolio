@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- Icons
+    ================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" type="image/jpeg" sizes="180x180" href="RC-logo.png">
@@ -61,7 +65,7 @@
                 <div class="s-header__block">
                     <div class="s-header__logo">
                         <a class="logo" href="index.html">
-                            <img src="images/RC-logo.png" alt="Homepage">
+                            <img src="images/RC-logo.png" alt="Homepage" title="Rumil Christian - Logo">
                         </a>
                     </div>
 
@@ -73,12 +77,12 @@
                     <ul class="s-header__menu-links">
                            
                         <!-- links-container -->
-                        <li  class="current"><a href="#intro" class="smoothscroll">Home</a></li>
-                        <li><a href="#skills" class="smoothscroll">Skills</a></li>
-                        <li><a href="#folio" class="smoothscroll">Projects</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li  class="current"><a href="#intro" class="smoothscroll" title="Homepage"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                        <li><a href="#skills" class="smoothscroll" title="My Skills">Skills</a></li>
+                        <li><a href="#folio" class="smoothscroll" title="My Projects">Projects</a></li>
+                        <li><a href="#about" class="smoothscroll" title="About Me"><i class="fa fa-fw fa-info"></i>About</a></li>
                     
-                        <li><a href="#footer" class="smoothscroll">Contact</a></li>
+                        <li><a href="#footer" class="smoothscroll" title="Contact Me"><i class="fa fa-fw fa-user"></i>Contact</a></li>
                         <!--<li><a href="./resume/CurriculumVitae.pdf" target="_blank">Curriculum Vitae </a></li>-->
                         <div class="animation start-home"></div> 
                    
@@ -86,15 +90,15 @@
                     </ul> <!-- s-header__menu-links -->
 
                     <ul class="s-header__social">
-                            <li>
-                                    <a href="https://www.facebook.com/profile.php?id=100004975335479" target="_blank">
-                                        <img src="./images/icons/contacts/facebook-dark.png" 
-                                        alt="Facebook">
-                                        <span>Facebook</span>
-                                    </a>
-                                </li>
                         <li>
-                                <a href="mailto:https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank">  
+                                <a href="https://www.facebook.com/profile.php?id=100004975335479" target="_blank" title="My Facebook Profile">
+                                    <img src="./images/icons/contacts/facebook-dark.png" alt="Facebook">
+                                    <span>Facebook</span>
+                                </a>
+                        </li>
+
+                        <li>
+                                <a href="mailto:https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank" title="Email me">  
                                 <img src="./images/icons/contacts/Gmail-dark.png" 
                                 alt="Gmail">
                                 <span>Gmail</span>
@@ -102,7 +106,7 @@
                         </li>
 
                         <li>
-                            <a href="https://www.youtube.com/channel/UCLsYOOdSZ-nUECA9bxY30gw" target="_blank">
+                            <a href="https://www.youtube.com/channel/UCLsYOOdSZ-nUECA9bxY30gw" target="_blank" title="My Youtube Channel">
                                 <img src="./images/icons/contacts/youtube-black.png" 
                                 alt="Youtube">
                                 <span>Youtube</span>
@@ -135,8 +139,8 @@
                     <div class="column lg-12 s-intro__content-inner">
                             <h3 class="column lg-12 section-header__pretitle text-pretitle">Hello World!!!</h3>
                         <h1 class="s-intro__content-title">
-                            Hi! I'm Rumil Christian <br>
-                            Computer Engineering<br>
+                            Hi, It's Rumil Christian <br>
+                            I'm a <span></span> <br>
                             Graduate
                         </h1>
 
@@ -146,7 +150,14 @@
                         </div>
 
                         <div class="image">
-                            <img src="images/me/Profile.png" class="me">
+                            <img src="images/me/Profile.png" class="me" title="My Profile">
+                        </div>
+
+                        <div class="icons">
+                            <a href="https://www.facebook.com/profile.php?id=100004975335479" target="_blank" title="My Facebook Profile"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="https://www.instagram.com/rumiltirol/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="https://www.youtube.com/channel/UCLsYOOdSZ-nUECA9bxY30gw" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a href="https://github.com/RumilChristianTSeloveres" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                         </div>
 
                     </div> <!-- s-intro__content-inner -->
@@ -1047,7 +1058,7 @@
 
                 <div class="column lg-6 tab-12 s-footer__bottom-right">
                     <div class="ss-copyright">
-                        <span>© Copyright  2022</span>
+                        <span>&copy; Copyright  2022</span>
                         <span>Design by <a href="https://www.facebook.com/profile.php?id=100004975335479" target="_blank">Kuya Rum'z</a></span>
                     </div>
                 </div>
@@ -1065,9 +1076,10 @@
 
         </footer> <!-- end footer -->
 
-
-        
     </div>
+
+    <!-- Icons for Facebook, Gmail, Youtube, Github-->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>

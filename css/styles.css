@@ -2824,7 +2824,7 @@ img.u-pull-left {
   font-size: calc(var(--text-size) * 1.1111);
   font-weight: 300;
   line-height: 1.8;
-  color: var(--color-text-light);
+  color: black;
 }
 
 .section-header::before {
@@ -3072,6 +3072,12 @@ img.u-pull-left {
   z-index: 3;
   line-height: 1;
   transform: translate(4px, 0);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.s-header__logo .logo:hover{
+  transform: scale(1.2);
 }
 
 .s-header__logo a {
@@ -3087,6 +3093,7 @@ img.u-pull-left {
   width: var(--logo-width);
   margin: 0;
   vertical-align: bottom;
+  filter: drop-shadow(1px 1px 2px yellow);
 }
 
 /* --------------------------------------------------------------------
@@ -3099,18 +3106,26 @@ img.u-pull-left {
   align-items: center;
   justify-content: space-between;
 }
+
 .s-header__menu-links {
   list-style: none;
   display: inline-flex;
   flex-flow: row nowrap;
   margin: 0 4rem 0 0;
   padding: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.s-header__menu-links li:hover{
+  transform: scale(1.2);
 }
 
 .s-header__menu-links li {
   padding-left: 0;
 
 }
+
 .s-header__menu-links hr {
   
 }
@@ -3126,8 +3141,14 @@ img.u-pull-left {
   transition-property: color, background-color;
 }
 
+.s-header__menu-links a:hover,
+ .s-header__menu-links a.active {
+  color: orange;
+}
+
 .s-header__menu-links .current a {
   color: white;
+  border-bottom: 3px solid whitesmoke;
 }
 
 /* --------------------------------------------------------------------
@@ -3449,6 +3470,10 @@ img.u-pull-left {
 	z-index: 1;
 }
 
+.image {
+  filter: drop-shadow(1px 1px 20px orange);
+}
+
 .image img {
 	position: absolute;
 	height: 140%;
@@ -3456,10 +3481,28 @@ img.u-pull-left {
 	transform: translate(-40%);
 	bottom: 0;
 	transition: left 2s ease;
+  /*box-shadow: 1px 1px 20px yellow;*/
 }
 
 .image:hover .me {
 	left: 55%;
+}
+
+.icons {
+	text-decoration: none;
+	margin-top: 2%;
+}
+
+.icons ion-icon {
+	margin-left: 2%;
+	margin-bottom: 20px;
+	font-size: 30px;
+	transition: .4s ease;
+}
+
+.icons ion-icon:hover {
+	color: yellow;
+  transform: scale(1.2);
 }
 
 .s-intro__content-bg {
@@ -3529,6 +3572,10 @@ img.u-pull-left {
   border-color: orangered;
   margin-right: var(--vspace-1);
   margin-bottom: 0;
+}
+
+.s-intro__content-btn:hover {
+  color: yellow;
 }
 
 .s-intro__content-video-btn {
@@ -3920,10 +3967,16 @@ img.u-pull-left {
 .bricks-wrapper .entry {
   overflow: hidden;
   position: relative;
+  border-style: solid;
+  border-width: 8px;
+}
+
+.bricks-wrapper .entry{
+  filter: drop-shadow(2px 2px 8px orange);
 }
 
 .bricks-wrapper .entry__link {
-  display: block;
+  display: flex;
   position: relative;
 }
 
@@ -3994,7 +4047,7 @@ img.u-pull-left {
 .bricks-wrapper .entry__cat {
   font-size: calc(var(--text-size) * 0.7778);
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.3);
+  color: orangered;
 }
 
 .bricks-wrapper .entry__title {
@@ -4210,7 +4263,7 @@ img.u-pull-left {
 
 .clients-list__item a:focus,
 .clients-list__item a:hover {
-  background-color: var(--color-gray-18);
+  background-color: orangered;
 }
 
 .clients-list__item a:focus img,
@@ -4705,6 +4758,12 @@ img.u-pull-left {
  .s-header__social a {
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.s-header__social li:hover {
+  transform: scale(1.2);
 }
 
 .s-header__social img {
@@ -4731,10 +4790,82 @@ img.u-pull-left {
 .s-intro__content-title span {
   letter-spacing: 0.0001rem;
   font-family: var(--font-1);
-  font-size: calc(var(--text-size) * 1.1111);
+  font-size: 60px;
   font-weight: 300;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+.s-intro__content-title span::before {
+  content: "Computer Engineer";
+  color: orangered;
+  animation: words 20s infinite;
+}
+
+.s-intro__content-title span::after {
+  content: "";
+  position: absolute;
+  background-color: #2c2c2c;
+  width: calc(100% + 8px);
+  height: 100%;
+  bottom: 0px;
+  right: -10px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+    border-left: 2px solid orangered;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    Content: "Bachelor's Degree"
+  }
+  21%,
+  40%{
+    content: "Computer Engineer";
+  }
+  41%,
+  60%{
+    content: "Bachelor's Degree";
+  }
+  61%,
+  80% {
+    content: "Computer Engineer";
+  }
+  81%,
+  100%{
+    content: "Computer Engineer";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95%{
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85%{
+    width: calc(100% + 8px);
+  }
 }
 
 /* ------------------------------------------------------------------- 
@@ -4803,6 +4934,7 @@ img.u-pull-left {
 
 .s-about img {
   border-radius: 10px;
+  box-shadow: 2px 2px 40px orange;
 }
 
 .about-info p {
