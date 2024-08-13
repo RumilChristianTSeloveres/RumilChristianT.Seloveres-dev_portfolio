@@ -3475,7 +3475,7 @@ img.u-pull-left {
 }
 
 .image img {
-	position: absolute;
+	position: inherit;
 	height: 140%;
 	left: 45%;
 	transform: translate(-40%);
